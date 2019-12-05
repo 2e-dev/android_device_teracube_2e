@@ -267,9 +267,6 @@
     <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
      <bool name="config_dynamic_bind_ims">true</bool>
 
-    <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
-     <string name="config_ims_package">com.mediatek.ims</string>
-
     <!-- Operating volatage for bluetooth controller. 0 by default-->
      <integer name="config_bluetooth_operating_voltage_mv">0</integer>
 
