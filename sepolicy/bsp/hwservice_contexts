@@ -1,0 +1,2 @@
+vendor.fpsensor.hardware.fpsensorhidlsvc::IFpsensorHidlSvc u:object_r:fp_ext_svc2_service:s0
+vendor.microtrust.hardware.tface::ITFaceDevice u:object_r:mtk_hal_tface_hwservice:s0

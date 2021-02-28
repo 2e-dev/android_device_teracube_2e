@@ -1,0 +1,6 @@
+allow mtk_hal_audio debugfs_ion:dir search;
+allow mtk_hal_audio sysfs_dt_firmware_android:dir r_dir_perms;
+allow mtk_hal_audio sysfs_dt_firmware_android:file r_file_perms;
+allow mtk_hal_audio persist_data_file:dir search;
+allow mtk_hal_audio self:process execmem;
+

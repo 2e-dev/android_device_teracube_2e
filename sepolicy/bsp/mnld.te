@@ -1,0 +1,8 @@
+# add for gps emi download platform
+
+allow mnld gps_emi_device:chr_file rw_file_perms;
+allow mnld storage_file:lnk_file read;
+allow mnld mnt_user_file:dir search;
+allow mnld proc_cmdline:file r_file_perms;
+allow mnld sysfs_dt_firmware_android:dir r_dir_perms;
+allow mnld sysfs_dt_firmware_android:file r_file_perms;

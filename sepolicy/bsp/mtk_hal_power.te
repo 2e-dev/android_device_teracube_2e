@@ -1,0 +1,1 @@
+allow mtk_hal_power sysfs_keypad_file:file write;

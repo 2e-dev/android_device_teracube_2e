@@ -1,0 +1,3 @@
+  
+allow vold sysfs_mmcblk:file rw_file_perms;
+allowxperm vold loop_device:blk_file ioctl LOOP_GET_STATUS64;
