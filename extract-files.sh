@@ -59,9 +59,23 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        # Load VNDK-29 version of libmedia_helper
+        vendor/lib64/hw/audio.primary.mt6765.so)
+            "${PATCHELF}" --replace-needed libmedia_helper.so libmedia_helper-v29.so ${2}
+            ;;
+        vendor/lib/hw/audio.primary.mt6765.so)
+            "${PATCHELF}" --replace-needed libmedia_helper.so libmedia_helper-v29.so ${2}
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" false "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
+
+blob_fixup
 
 "${MY_DIR}/setup-makefiles.sh"
