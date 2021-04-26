@@ -360,6 +360,15 @@
         </interface>
         <fqname>@1.1::IBGService/internal/0</fqname>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.gpu</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGraphicExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.engineermode</name>
         <transport>hwbinder</transport>
