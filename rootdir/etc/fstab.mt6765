@@ -10,6 +10,7 @@ system /system ext4 ro wait,avb=vbmeta_system,logical,first_stage_mount,avb_keys
 
 vendor /vendor ext4 ro wait,avb,logical,first_stage_mount,
 
+system_ext /system_ext ext4 ro wait,avb,logical,first_stage_mount,
 
 product /product ext4 ro wait,avb,logical,first_stage_mount,
 # 137 "vendor/mediatek/proprietary/hardware/fstab/mt6765/fstab.in.mt6765"
