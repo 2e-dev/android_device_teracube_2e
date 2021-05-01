@@ -391,9 +391,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.connsys.driver.ready=no \
     vendor.mtk.vdec.waitkeyframeforplay=9 \
 
-# Zygote preforking
-PRODUCT_PROPERTY_OVERRIDES += persist.device_config.runtime_native.usap_pool_enabled=true
-
 # sf lcd density
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
 
