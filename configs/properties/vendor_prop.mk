@@ -328,7 +328,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.camera3.zsl.default=130 \
     ro.vendor.connsys.dedicated.log=1 \
     ro.vendor.enable.geo.fencing=1 \
-    ro.vendor.have_aeev_feature=1 \
     ro.vendor.hx_camera_fullscreen_size=1 \
     ro.vendor.hx_camera_fullscreen_size_609=1 \
     ro.vendor.hx_custom_camera_size=0 \

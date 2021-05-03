@@ -15,8 +15,6 @@ import /vendor/etc/init/microtrust.storage.persist.rc
 import /vendor/etc/init/microtrust.storage.proinfo.rc
 import /vendor/etc/init/microtrust.storage.rpmb.rc
 import /vendor/etc/init/microtrust.init_thh.rc
-import /vendor/etc/init/hw/init.aee.rc
-import /system/etc/init/hw/init.aee.rc
 import /vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 import /vendor/etc/init/android.hardware.boot@1.0-service.rc
 
