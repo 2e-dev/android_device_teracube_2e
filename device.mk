@@ -19,6 +19,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/teracube/2e
 
+# Copy fstab to ramdisk
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/etc/fstab.mt6762:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6762
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -71,15 +74,6 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     android.hardware.bluetooth.a2dp@1.0-impl \
     android.hardware.bluetooth.a2dp@1.0-service
-
-# Dalvik Heap Configuration (4GB)
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=192m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.6 \
-    dalvik.vm.heapminfree=8m \
-    dalvik.vm.heapmaxfree=16m
 
 # Display
 PRODUCT_PACKAGES += \
@@ -231,6 +225,7 @@ PRODUCT_PACKAGES += \
     init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
+    init.mt6762.rc \
     init.mt6765.rc \
     init.mt6765.usb.rc \
     init.project.rc \
@@ -242,8 +237,8 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     multi_init.rc \
     fstab.enableswap \
+    fstab.mt6762 \
     fstab.mt6765 \
-    ramdisk-fstab.mt6765 \
     ueventd.mtk.rc
 
 # NFC
