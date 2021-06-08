@@ -129,10 +129,13 @@ on fs
     write /sys/kernel/debug/tracing/trace_marker "B|1|Mount"
     wait_for_prop hwservicemanager.ready "true"
     start vendor.boot-hal-1-0
-    mount_all /vendor/etc/fstab.mt6765 --early
-    mount_all /vendor/etc/fstab.mt6765 --late
+    mount_all /vendor/etc/fstab.mt6762 --early
     write /sys/kernel/debug/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
+
+on late-fs
+    mount_all /vendor/etc/fstab.mt6765 --late
+
 
 on fs
 
