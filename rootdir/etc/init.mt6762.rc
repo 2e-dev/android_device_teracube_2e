@@ -134,8 +134,7 @@ on fs
     write /proc/bootprof "INIT:Mount_END"
 
 on late-fs
-    mount_all /vendor/etc/fstab.mt6765 --late
-
+    mount_all /vendor/etc/fstab.mt6762 --late
 
 on fs
 
