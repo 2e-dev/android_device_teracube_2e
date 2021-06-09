@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 Teracube Inc.
+# Copyright (C) 2021 The Styx Project.
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,12 +13,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Styx Project stuff
+$(call inherit-product, vendor/styx/config/common.mk)
 
 PRODUCT_DEVICE := 2e
 PRODUCT_MANUFACTURER := Teracube
-PRODUCT_NAME := lineage_2e
+PRODUCT_NAME := styx_2e
 PRODUCT_MODEL := Teracube 2e
 
 PRODUCT_GMS_CLIENTID_BASE := android-teracube
