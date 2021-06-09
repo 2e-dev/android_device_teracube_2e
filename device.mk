@@ -19,6 +19,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/teracube/2e
+PRODUCT_SOONG_NAMESPACES += packages/apps/Bluetooth
 
 # Copy fstab to ramdisk
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/etc/fstab.mt6762:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6762
