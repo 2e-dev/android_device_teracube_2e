@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
 
 # MediaTek Common
 $(call inherit-product, device/mediatek/common/device.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
+TARGET_PROVIDES_MTK_PROPRIETARY := true
+TARGET_USES_MEDIATEK_CHIPSET := true
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -231,9 +235,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
@@ -287,6 +288,11 @@ PRODUCT_PACKAGES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
+
+# External
+PRODUCT_PACKAGES += \
+    libladder \
+    libudf
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
