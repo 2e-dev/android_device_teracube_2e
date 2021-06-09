@@ -69,5 +69,3 @@ service remosaic_daemon /vendor/bin/remosaic_daemon
     oneshot
     disabled
 
-on charger
-    load_system_props
