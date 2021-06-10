@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.0
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
