@@ -1,0 +1,35 @@
+[
+  {
+    "repository" : "kernel_teracube_2e",
+    "target_path": "kernel/teracube/2e"
+  },
+  {
+    "repository" : "vendor_teracube_2e",
+    "target_path": "vendor/teracube/2e"
+  },
+  {
+    "repository" : "device_mediatek_common",
+    "target_path": "device/mediatek/common",
+    "remote"     : "styx"
+  },
+  {
+    "repository" : "vendor_mediatek_ims",
+    "target_path": "vendor/mediatek/ims",
+    "remote"     : "styx"
+  },
+  {
+    "repository" : "vendor_mediatek_interfaces",
+    "target_path": "vendor/mediatek/interfaces",
+    "remote"     : "styx"
+  },
+  {
+    "repository" : "vendor_mediatek_opensource",
+    "target_path": "vendor/mediatek/opensource",
+    "remote"     : "styx"
+  },
+  {
+    "repository" : "device_mediatek_sepolicy",
+    "target_path": "device/mediatek/sepolicy",
+    "remote"     : "styx"
+  }
+]
