@@ -394,18 +394,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
 # sf lcd density
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
 
-# Dalvik/ART
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true \
-    ro.sys.fw.dex2oat_thread_count=8 \
-    dalvik.vm.boot-dex2oat-threads=8 \
-    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.dex2oat-filter=quicken \
-    dalvik.vm.dex2oat-threads=8 \
-    dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
-    dalvik.vm.image-dex2oat-filter=quicken \
-    dalvik.vm.image-dex2oat-threads=8
-
 # Disable ccodec
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0
@@ -413,3 +401,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
+
+# Surfaceflinger properties for vsync.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.primary_display_orientation=ORIENTATION_0 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8300000 \
+    ro.surface_flinger.present_time_offset_from_vsync_ns=0 \
+    ro.surface_flinger.vsync_event_phase_offset_ns=8300000
