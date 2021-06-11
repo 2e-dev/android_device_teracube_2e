@@ -61,7 +61,6 @@ TARGET_DISABLE_POSTRENDER_CLEANUP := true
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_TAGS_OFFSET := 0x07880000
 BOARD_KERNEL_OFFSET := 0x00080000
@@ -145,10 +144,10 @@ BOARD_VNDK_VERSION := current
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Sepolicy
-#include device/mediatek/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += \
-#        $(DEVICE_PATH)/sepolicy/basic \
-#        $(DEVICE_PATH)/sepolicy/bsp
+include device/mediatek/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += \
+        $(DEVICE_PATH)/sepolicy/basic \
+        $(DEVICE_PATH)/sepolicy/bsp
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
