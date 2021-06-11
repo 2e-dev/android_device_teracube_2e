@@ -894,6 +894,8 @@ on boot
     chmod 660 /dev/ttyGS1
     chown system radio /dev/ttyGS1
 
+    stop console
+
 on property:ro.board.platform=mt6753
     chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
     chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
@@ -1086,8 +1088,6 @@ on property:sys.boot_completed=1 && property:ro.boot.atm=enable
     start meta_tst
     start loghidlvendorservice
     start loghidlsysservice
-
-
 
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
