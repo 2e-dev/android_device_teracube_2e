@@ -405,6 +405,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Surfaceflinger properties for vsync.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.running_without_sync_framework=false \
     ro.surface_flinger.primary_display_orientation=ORIENTATION_0 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=8300000 \
