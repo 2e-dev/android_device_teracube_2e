@@ -152,6 +152,9 @@ BOARD_SEPOLICY_DIRS += \
         $(DEVICE_PATH)/sepolicy/basic \
         $(DEVICE_PATH)/sepolicy/bsp
 
+# MediaTek includes
+MTK_PLATFORM := mt6765
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
