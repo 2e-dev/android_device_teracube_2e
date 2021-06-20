@@ -33,6 +33,9 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
+# Board Info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
