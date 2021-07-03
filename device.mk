@@ -303,7 +303,6 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_BOOT_JARS += \
-    ImsServiceBase \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -314,7 +313,6 @@ PRODUCT_BOOT_JARS += \
 
 # Shims
 PRODUCT_PACKAGES += libshim_vtservice
-PRODUCT_PACKAGES += ImsServiceBase
 
 # WiFi
 PRODUCT_COPY_FILES += \
