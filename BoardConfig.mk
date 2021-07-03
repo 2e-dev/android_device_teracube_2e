@@ -151,10 +151,10 @@ BOARD_VNDK_VERSION := current
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 
 # Sepolicy
-include device/mediatek/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += \
-        $(DEVICE_PATH)/sepolicy/basic \
-        $(DEVICE_PATH)/sepolicy/bsp
+# include device/mediatek/sepolicy/sepolicy.mk
+# BOARD_SEPOLICY_DIRS += \
+#        $(DEVICE_PATH)/sepolicy/basic \
+#        $(DEVICE_PATH)/sepolicy/bsp
 
 # MediaTek includes
 MTK_PLATFORM := mt6765
