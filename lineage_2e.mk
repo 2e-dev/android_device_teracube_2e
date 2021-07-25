@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# B2G
+$(call inherit-product, gonk-misc/b2g.mk)
+
 PRODUCT_DEVICE := 2e
 PRODUCT_MANUFACTURER := Teracube
 PRODUCT_NAME := lineage_2e

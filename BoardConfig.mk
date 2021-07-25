@@ -164,3 +164,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 -include vendor/teracube/2e/BoardConfigVendor.mk
+
+BUILD_BROKEN_PHONY_TARGETS := true
+ALLOW_MISSING_DEPENDENCIES := true
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
