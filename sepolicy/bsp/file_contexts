@@ -1,4 +1,3 @@
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerrpint@1\.1-service           u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp     u:object_r:fingerprint_device:s0
 /dev/fpsensor      u:object_r:fpsensor_fp_device:s0
 /(system\/vendor|vendor)/bin/hw/vendor\.microtrust\.hardware\.tface@1\.0-service u:object_r:hal_tface_exec:s0
