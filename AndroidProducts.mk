@@ -5,4 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_2e.mk
+    $(LOCAL_DIR)/aosp_2e.mk \
+    $(LOCAL_DIR)/Teracube_2e.mk
