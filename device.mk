@@ -194,7 +194,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
 
 # Permissions
 PRODUCT_COPY_FILES += \
