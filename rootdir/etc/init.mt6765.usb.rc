@@ -605,15 +605,15 @@ property:vendor.usb.acm_enable=0 && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/UDC ${vendor.usb.controller}
     setprop sys.usb.state ${sys.usb.config}
 
-### ACM APPEND SERIES ###
-on property:persist.vendor.radio.port_index=""
+# ACM APPEND SERIES
+on property:persist.vendor.radio.port_index=0 && property:sys.boot_completed=1
     setprop vendor.usb.acm_idx ""
     setprop vendor.usb.acm_cnt 0
     setprop vendor.usb.acm_enable 0
     setprop sys.usb.config none
     setprop sys.usb.config ${sys.usb.state}
 
-on property:persist.vendor.radio.port_index="1"
+on property:persist.vendor.radio.port_index=1 && property:sys.boot_completed=1
     setprop sys.usb.config acm_gs0
 on property:sys.usb.config=mass_storage,adb,acm
     setprop sys.usb.config acm_gs0
@@ -626,7 +626,7 @@ on property:sys.usb.config=acm_gs0
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "1"
 
-on property:persist.vendor.radio.port_index="2"
+on property:persist.vendor.radio.port_index=2 && property:sys.boot_completed=1
     setprop sys.usb.config acm_gs1
 on property:sys.usb.config=acm_gs1
     setprop vendor.usb.acm_port0 1
@@ -637,7 +637,7 @@ on property:sys.usb.config=acm_gs1
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "2"
 
-on property:persist.vendor.radio.port_index="3"
+on property:persist.vendor.radio.port_index=3 && property:sys.boot_completed=1
     setprop sys.usb.config acm_gs2
 on property:sys.usb.config=acm_third
     setprop sys.usb.config acm_gs2
@@ -650,7 +650,7 @@ on property:sys.usb.config=acm_gs2
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "3"
 
-on property:persist.vendor.radio.port_index="4"
+on property:persist.vendor.radio.port_index=4 && property:sys.boot_completed=1
     setprop sys.usb.config acm_gs3
 on property:sys.usb.config=gs3
     setprop sys.usb.config acm_gs3
