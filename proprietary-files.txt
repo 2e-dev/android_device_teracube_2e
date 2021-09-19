@@ -1287,3 +1287,7 @@ lib64/vendor.mediatek.hardware.pq@2.2.so
 lib64/vendor.mediatek.hardware.pq@2.3.so
 lib64/vendor.microtrust.hardware.tface@1.0.so
 lib64/vendor.trustonic.teeregistry@1.0.so
+
+# Vulkan
+vendor/lib/hw/vulkan.mt6765.so
+vendor/lib64/hw/vulkan.mt6765.so
