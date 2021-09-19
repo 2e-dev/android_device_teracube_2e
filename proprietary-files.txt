@@ -356,6 +356,75 @@ vendor/lib64/libstagefrighthw.so
 vendor/lib/hw/android.hardware.power@1.3-impl-mediatek.so
 vendor/lib64/hw/android.hardware.power@1.3-impl-mediatek.so
 
+# MTK-IMS
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-priv-app/ImsService/ImsService.apk
+bin/vtservice
+etc/init/init.vtservice.rc
+lib/libmtk_vt_service.so
+lib/libmtk_vt_wrapper.so
+lib/libmtkaudio_utils.so
+lib/libmtkavenhancements.so
+lib/libmtklimiter.so
+lib/libmtkperf_client.so
+lib/libmtkshifter.so
+lib/vendor.mediatek.hardware.videotelephony@1.0.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkaudio_utils.so
+lib64/libmtkavenhancements.so
+lib64/libmtklimiter.so
+lib64/libmtkperf_client.so
+lib64/libmtkshifter.so
+lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# MTK-IMS
+lib/libcomutils.so|077843d82d8689718d99542cee113cf2000f9243
+lib/libsignal.so|b52ca9eefa845d7801f6515511ca863ed7acb796
+lib/libsink.so|176bc403f45819a10e0ed4fa74edb8a5ec65e7bb
+lib/libsource.so|4b6549b0acc20a7a4b1a565fe092f20b2dc96e31
+lib/libimsma.so|035f46e39b03a4d57478fc9b93b253344554e4d6
+lib/libimsma_adapt.so|f860d9d72484baa934fea0a78b4b1ef40c83b22c
+lib/libimsma_rtp.so|321d4f4356b122846f3152700cd44fc5af8eed06
+lib/libimsma_socketwrapper.so|4dc6cbecf1ce4b259d69ad86d77c7db51d843f31
+lib/libvt_avsync.so|b151d76ea3846a20708cd04f9ef38f4f42ad24eb
+lib/libvcodec_cap.so|d39134c99bd7c42528b39c051716db72e4e9f20b
+lib/libvcodec_capenc.so|acc2e9187b0aaa7694128634bc83b998da955932
+lib/vendor.mediatek.hardware.mms@1.0.so|b3067045bb342518e4a79b43398c23afc560ca88
+lib/vendor.mediatek.hardware.mms@1.1.so|d451172971c7582268a0118a22b86ef22911ab6f
+lib64/libvcodec_cap.so|e27c3cabe78440b48b5a1dbc25a3f4aca5b23add
+lib64/libvcodec_capenc.so|88e42ca3d345ae1e681dafef236ee3014ff03ca1
+
+# MTK-IMS (Vendor)
+vendor/bin/hw/vtservice_hidl
+vendor/bin/volte_imcb
+vendor/bin/muxreport
+vendor/etc/init/muxreport.rc
+vendor/lib64/libverno.so
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
+vendor/etc/init/init.wod.rc
+vendor/etc/init/init.bip.rc
+vendor/bin/volte_stack
+vendor/lib64/libipsec_ims_shr.so
+vendor/lib/libipsec_ims_shr.so
+vendor/bin/volte_ua
+vendor/bin/wfca
+vendor/etc/init/init.wfca.rc
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/init.vtservice_hidl.rc
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
 # Mediatek
 vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.1-service-mediatek
@@ -384,7 +453,6 @@ vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.power@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcam.eventcallback.so
 vendor/lib/libmtkcam_debugutils.so
@@ -428,14 +496,12 @@ vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.5-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.power@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/libmtk-ril.so
 vendor/lib64/libmtkares.so
 vendor/lib64/libmtkcam.eventcallback.so
@@ -545,7 +611,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # WLAN - from KF6J RP1A.200720.011
 vendor/bin/hw/wpa_supplicant|457beb4d6f5a4d0f2843f79b4e9fa520b00ff9ba
@@ -562,24 +627,6 @@ vendor/lib64/libwifi-hal.so|e9c5450bc0b29b9a31474dd95e09226715b7c3ca
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|24e1fdbb2a59d0e94e6e2364ff7163cb9dc91e44
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|6f8f19430e122ae46615b8a8f560852cc46f3f23
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|24cd1b0bed14dcc9896400f01cc4b5e67396464b
-
-# MTK-IMS
-etc/permissions/com.mediatek.wfo.legacy.xml
-bin/vtservice
-etc/init/init.vtservice.rc
-framework/mediatek-wfo-legacy.jar
-lib/libcomutils.so
-lib/libmtkaudio_utils.so
-lib/libmtkavenhancements.so
-lib/libmtklimiter.so
-lib/libmtkperf_client.so
-lib/libmtkshifter.so
-lib64/libmtk_vt_wrapper.so
-lib64/libmtkaudio_utils.so
-lib64/libmtkavenhancements.so
-lib64/libmtklimiter.so
-lib64/libmtkperf_client.so
-lib64/libmtkshifter.so
 
 # NFC
 -framework/com.st.android.nfc_extensions.jar
@@ -645,9 +692,6 @@ vendor/etc/init/nvram_daemon.rc
 vendor/etc/partition_permission.sh
 
 # Misc
--vendor/app/EmCamera/EmCamera.apk
-vendor/app/EmCamera/lib/arm64/libem_camera_jni.so
-vendor/app/SensorHub/lib/arm64/libem_sensor_jni.so
 -vendor/app/SensorHub/SensorHub.apk
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
@@ -664,7 +708,6 @@ vendor/bin/hw/mtkfusionrild
 vendor/bin/hw/power_legacy_test_v_1_0
 vendor/bin/hw/power_native_test_v_1_0
 vendor/bin/hw/vendor.microtrust.hardware.tface@1.0-service
-vendor/bin/hw/vtservice_hidl
 vendor/bin/init_thh
 vendor/bin/ipsec_mon
 vendor/bin/istorageproxyd
@@ -700,12 +743,6 @@ vendor/bin/stp_dump3
 vendor/bin/stroke
 vendor/bin/st_factorytests-vendor
 vendor/bin/teei_loader
-vendor/bin/volte_imcb
-vendor/bin/volte_imsm_93
-vendor/bin/volte_md_status
-vendor/bin/volte_stack
-vendor/bin/volte_ua
-vendor/bin/wfca
 vendor/data/misc/ProjectConfig.mk
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/agps_profiles_conf2.xml
@@ -733,7 +770,6 @@ vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/init.bip.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
@@ -742,16 +778,8 @@ vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.fpsensor.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.md_apps.rc
-vendor/etc/init/init.volte_imcb.rc
-vendor/etc/init/init.volte_imsm_93.rc
-vendor/etc/init/init.volte_md_status.rc
-vendor/etc/init/init.volte_stack.rc
-vendor/etc/init/init.volte_ua.rc
-vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
-vendor/etc/init/init.wod.rc
 vendor/etc/init/init_connectivity.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
@@ -1023,7 +1051,6 @@ vendor/lib/libhydra.so
 vendor/lib/libIMGegl.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
-vendor/lib/libipsec_ims_shr.so
 vendor/lib/libitrusty.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
@@ -1076,8 +1103,6 @@ vendor/lib/libvcodecdrv.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libverno.so
-vendor/lib/libvolte_core_shr.so
-vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libvt_custom.so
@@ -1141,8 +1166,6 @@ vendor/lib64/libcvsd_mtk.so
 vendor/lib64/libdirect-coredump.so
 vendor/lib64/libdpframework.so
 vendor/lib64/libeffecthal.base.so
-vendor/lib64/libem_camera_jni.so
-vendor/lib64/libem_sensor_jni.so
 vendor/lib64/libfeature.face.so
 vendor/lib64/libfeature.stereo.provider.so
 vendor/lib64/libfeatureiodrv_mem.so
@@ -1171,7 +1194,6 @@ vendor/lib64/libimageio_plat_pipe.so
 vendor/lib64/libIMGegl.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
-vendor/lib64/libipsec_ims_shr.so
 vendor/lib64/libitrusty.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
