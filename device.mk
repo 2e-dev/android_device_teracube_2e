@@ -37,7 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # MediaTek Common
 $(call inherit-product, device/mediatek/common/device.mk)
-TARGET_PROVIDES_MTK_PROPRIETARY := true
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -282,11 +281,6 @@ PRODUCT_PACKAGES += \
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
-
-# External
-PRODUCT_PACKAGES += \
-    libladder \
-    libudf
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal

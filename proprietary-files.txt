@@ -274,6 +274,12 @@ vendor/lib64/hw/hwcomposer.mt6765.so
 vendor/lib64/hw/memtrack.mt6765.so
 vendor/lib64/libdrm.so
 
+# External
+vendor/lib/libudf.so
+vendor/lib/libladder.so
+vendor/lib64/libudf.so
+vendor/lib64/libladder.so
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
