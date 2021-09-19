@@ -16,16 +16,12 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a53
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
-TARGET_CPU_SMP := true
-
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 
 BUILD_BROKEN_DUP_RULES := true
-
-ENABLE_CPUSETS := true
 
 # Apps
 TARGET_SUPPORTS_64_BIT_APPS := true
@@ -54,9 +50,6 @@ TARGET_OTA_ASSERT_DEVICE := 2e,Teracube_2e
 
 # Charger Mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
-# Network Routing
-TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE := true
 
 # Display
 TARGET_SCREEN_HEIGHT := 1560
@@ -92,7 +85,7 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/configs/dtbo/dtbo.mk
 
-# Avb
+# AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
@@ -154,9 +147,6 @@ include device/mediatek/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
         $(DEVICE_PATH)/sepolicy/basic \
         $(DEVICE_PATH)/sepolicy/bsp
-
-# MediaTek includes
-MTK_PLATFORM := mt6765
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := vendor/teracube/2e-firmware
