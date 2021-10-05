@@ -39,8 +39,8 @@ PRODUCT_COPY_FILES += \
 
 # MediaTek Common
 $(call inherit-product, device/mediatek/common/device.mk)
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
-TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
+# $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+# TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
 TARGET_PROVIDES_MTK_PROPRIETARY := true
 TARGET_USES_MEDIATEK_CHIPSET := true
 
