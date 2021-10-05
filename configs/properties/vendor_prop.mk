@@ -315,7 +315,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.lmk.downgrade_pressure=60 \
     ro.mtk_microtrust_tee_support=1 \
     ro.opengles.version=196610 \
-    ro.surface_flinger.primary_display_orientation=0 \
     ro.telephony.default_network=9,9,9,9 \
     ro.telephony.iwlan_operation_mode=default \
     ro.telephony.sim.count=2 \

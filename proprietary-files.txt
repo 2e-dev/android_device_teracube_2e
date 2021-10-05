@@ -563,24 +563,6 @@ vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so|24e1fdbb2a59d0e94e6
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so|6f8f19430e122ae46615b8a8f560852cc46f3f23
 vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so|24cd1b0bed14dcc9896400f01cc4b5e67396464b
 
-# MTK-IMS
-etc/permissions/com.mediatek.wfo.legacy.xml
-bin/vtservice
-etc/init/init.vtservice.rc
-framework/mediatek-wfo-legacy.jar
-lib/libcomutils.so
-lib/libmtkaudio_utils.so
-lib/libmtkavenhancements.so
-lib/libmtklimiter.so
-lib/libmtkperf_client.so
-lib/libmtkshifter.so
-lib64/libmtk_vt_wrapper.so
-lib64/libmtkaudio_utils.so
-lib64/libmtkavenhancements.so
-lib64/libmtklimiter.so
-lib64/libmtkperf_client.so
-lib64/libmtkshifter.so
-
 # NFC
 -framework/com.st.android.nfc_extensions.jar
 etc/permissions/com.st.android.nfc_extensions.xml
@@ -1287,3 +1269,11 @@ lib64/vendor.mediatek.hardware.pq@2.2.so
 lib64/vendor.mediatek.hardware.pq@2.3.so
 lib64/vendor.microtrust.hardware.tface@1.0.so
 lib64/vendor.trustonic.teeregistry@1.0.so
+
+# mtklibs-temp
+vendor/lib/libudf.so
+vendor/lib/libladder.so
+vendor/lib64/libudf.so
+vendor/lib64/libladder.so
+
+
