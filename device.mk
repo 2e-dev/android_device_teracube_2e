@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Dynamic Partitions
-PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@6.0-util \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.audio@5.0.vendor \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -88,7 +89,11 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     audio.a2dp.default \
     android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service
+    android.hardware.bluetooth.a2dp@1.0-service \
+    android.hardware.bluetooth@1.0.vendor
+
+# Camera
+PRODUCT_PACKAGES += android.hardware.camera.provider@2.4.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -103,6 +108,10 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
@@ -112,6 +121,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+# GPS
+PRODUCT_PACKAGES += android.hardware.gnss@2.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -120,6 +132,7 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.0
 
 # HIDL
@@ -133,6 +146,9 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
     libhidlbase
+
+# Lights
+PRODUCT_PACKAGES += android.hardware.light@2.0.vendor
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -291,16 +307,23 @@ PRODUCT_PACKAGES += \
     libladder \
     libudf
 
+# Power
+PRODUCT_PACKAGES += android.hardware.power@1.0.vendor
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    android.hardware.sensors@2.0.vendor
 
 # Shims
 PRODUCT_PACKAGES += libshim_vtservice
+
+# USB
+PRODUCT_PACKAGES += android.hardware.usb@1.0.vendor
 
 # WiFi
 PRODUCT_COPY_FILES += \
