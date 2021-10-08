@@ -48,6 +48,8 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.audio@5.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.broadcastradio@1.0.vendor \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -82,7 +84,9 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-core/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgatekeeper-v29.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgatekeeper-v29.so \
     prebuilts/vndk/v29/arm64/arch-arm-armv8-a/shared/vndk-sp/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcompiler_rt.so \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcompiler_rt.so
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcompiler_rt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcompiler_rt.so \
+    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v30.so \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v30.so
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -308,7 +312,7 @@ PRODUCT_PACKAGES += \
     libudf
 
 # Power
-PRODUCT_PACKAGES += android.hardware.power@1.0.vendor
+PRODUCT_PACKAGES += android.hardware.power@1.3.vendor
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -323,7 +327,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += libshim_vtservice
 
 # USB
-PRODUCT_PACKAGES += android.hardware.usb@1.0.vendor
+PRODUCT_PACKAGES += android.hardware.usb@1.2.vendor
 
 # WiFi
 PRODUCT_COPY_FILES += \
