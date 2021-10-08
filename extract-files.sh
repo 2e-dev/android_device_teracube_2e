@@ -74,6 +74,10 @@ patchelf --replace-needed libmedia_helper.so libmedia_helper-v29.so ${DEVICE_BLO
 patchelf --replace-needed libgatekeeper.so libgatekeeper-v29.so ${DEVICE_BLOB_ROOT}/vendor/lib/hw/gatekeeper.itrusty.so
 patchelf --replace-needed libgatekeeper.so libgatekeeper-v29.so ${DEVICE_BLOB_ROOT}/vendor/lib64/hw/gatekeeper.itrusty.so
 
+# Load VNDK-30 version of libutils
+patchelf --replace-needed libutils.so libutils-v30.so ${DEVICE_BLOB_ROOT}/vendor/lib/libmtkcam_stdutils.so
+patchelf --replace-needed libutils.so libutils-v30.so ${DEVICE_BLOB_ROOT}/vendor/lib64/libmtkcam_stdutils.so
+
 # Patchelf vtservice for shim
 patchelf --add-needed libshim_vtservice.so ${DEVICE_BLOB_ROOT}/bin/vtservice
 
