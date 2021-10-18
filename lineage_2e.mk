@@ -4,19 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from 2e device
-$(call inherit-product, device/teracube/2e/device.mk)
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+
+# Inherit device configuration.
+$(call inherit-product, device/teracube/2e/device.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := 2e
+PRODUCT_BRAND := teracube
 PRODUCT_MANUFACTURER := Teracube
+PRODUCT_DEVICE := 2e
 PRODUCT_NAME := lineage_2e
 PRODUCT_MODEL := Teracube 2e
 

@@ -14,13 +14,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Dynamic Partitions
-PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Display dimensions
+TARGET_SCREEN_HEIGHT := 1560
+TARGET_SCREEN_WIDTH := 720
+
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/teracube/2e
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Copy fstab to ramdisk
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/rootdir/etc/fstab.mt6762:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6762
@@ -36,11 +39,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
 
 # MediaTek Common
-$(call inherit-product, device/mediatek/common/device.mk)
-$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
 TARGET_PROVIDES_MTK_PROPRIETARY := true
-TARGET_USES_MEDIATEK_CHIPSET := true
+$(call inherit-product, device/mediatek/common/device.mk)
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
