@@ -257,7 +257,6 @@ PRODUCT_PACKAGES += \
     factory_init.connectivity.rc \
     factory_init.project.rc \
     factory_init.rc \
-    init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6762.rc \
