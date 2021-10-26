@@ -244,10 +244,6 @@ vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 # Camera-bin
 vendor/bin/hw/camerahalserver
 
-# DRM-Hardware
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-
 # DRM-Widevine
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
