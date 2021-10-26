@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.audio@5.0.vendor \
     android.hardware.bluetooth.a2dp@1.0.vendor \
-    android.hardware.broadcastradio@1.0.vendor \
+    android.hardware.broadcastradio@1.1.vendor \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio@1.4.vendor \
-    android.hardware.radio.config@1.0
+    android.hardware.radio.config@1.2.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
