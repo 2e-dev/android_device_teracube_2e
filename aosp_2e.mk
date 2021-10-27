@@ -12,6 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+$(call inherit-product, vendor/styx/config/common.mk)
+
 PRODUCT_DEVICE := 2e
 PRODUCT_BRAND := Teracube
 PRODUCT_MANUFACTURER := Teracube
