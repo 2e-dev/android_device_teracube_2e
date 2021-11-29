@@ -314,6 +314,10 @@ PRODUCT_PACKAGES += libshim_vtservice
 PRODUCT_PACKAGES += ImsServiceBase
 
 # WiFi
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
+    WifiOverlay
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
@@ -321,3 +325,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit vendor
 $(call inherit-product, vendor/teracube/2e/2e-vendor.mk)
+ 
